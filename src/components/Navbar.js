@@ -1,16 +1,52 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../assets/logo.svg'
-import { FaBars } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
-import { useProductsContext } from '../context/products_context'
-import { useUserContext } from '../context/user_context'
+import React from "react";
+import styled from "styled-components";
+import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { links } from "../utils/constants";
+import CartButtons from "./CartButtons";
+import { useProductsContext } from "../context/products_context";
+import { useUserContext } from "../context/user_context";
 
 const Nav = () => {
-  return <h4>navbar</h4>
-}
+  return (
+    <NavContainer>
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">
+            <TextLogo>
+              <span className="primary">cozy</span>
+              <span>papa</span>
+            </TextLogo>
+          </Link>
+          <button type="button" className="nav-toggle">
+            <FaBars />
+          </button>
+        </div>
+        <ul className="nav-links">
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </NavContainer>
+  );
+};
+
+const TextLogo = styled.h1`
+  font-size: 1.5rem;
+  font-weight: 700;
+  > span[class="primary"] {
+    color: rgb(145, 118, 92);
+  }
+  > span:not(.primary) {
+    color: #222;
+  }
+`;
 
 const NavContainer = styled.nav`
   height: 5rem;
@@ -27,10 +63,6 @@ const NavContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img {
-      width: 175px;
-      margin-left: -15px;
-    }
   }
   .nav-toggle {
     background: transparent;
@@ -77,6 +109,6 @@ const NavContainer = styled.nav`
       display: grid;
     }
   }
-`
+`;
 
-export default Nav
+export default Nav;

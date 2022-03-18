@@ -14,8 +14,8 @@ const Nav = () => {
         <div className="nav-header">
           <Link to="/">
             <TextLogo>
-              <span className="primary">cozy</span>
-              <span>papa</span>
+              <span className="primary">Cozy</span>
+              <span>Papa</span>
             </TextLogo>
           </Link>
           <button type="button" className="nav-toggle">

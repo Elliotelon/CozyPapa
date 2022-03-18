@@ -1,15 +1,54 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useProductsContext } from '../context/products_context'
-import { FaTimes } from 'react-icons/fa'
-import { links } from '../utils/constants'
-import styled from 'styled-components'
-import CartButtons from './CartButtons'
-import { useUserContext } from '../context/user_context'
+import React from "react";
+import { Link } from "react-router-dom";
+import { useProductsContext } from "../context/products_context";
+import { FaTimes } from "react-icons/fa";
+import { links } from "../utils/constants";
+import styled from "styled-components";
+import CartButtons from "./CartButtons";
+import { useUserContext } from "../context/user_context";
 
 const Sidebar = () => {
-  return <h4>sidebar</h4>
-}
+  const isOpen = false;
+  return (
+    <SidebarContainer>
+      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+        <div className="sidebar-header">
+          <TextLogo>
+            <span className="primary">Cozy</span>
+            <span>Papa</span>
+          </TextLogo>
+          <button className="close-btn" type="button">
+            <FaTimes />
+          </button>
+        </div>
+        <ul className="links">
+          {links.map(({ id, text, url }) => {
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            );
+          })}
+          <li>
+            <Link to="/checkout">checkout</Link>
+          </li>
+        </ul>
+        <CartButtons />
+      </aside>
+    </SidebarContainer>
+  );
+};
+
+const TextLogo = styled.h1`
+  font-size: 1.5rem;
+  font-weight: 700;
+  > span[class="primary"] {
+    color: rgb(145, 118, 92);
+  }
+  > span:not(.primary) {
+    color: #222;
+  }
+`;
 
 const SidebarContainer = styled.div`
   text-align: center;
@@ -80,6 +119,6 @@ const SidebarContainer = styled.div`
       display: none;
     }
   }
-`
+`;
 
-export default Sidebar
+export default Sidebar;

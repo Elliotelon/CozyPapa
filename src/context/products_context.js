@@ -14,7 +14,7 @@ import {
 } from "../actions";
 
 const initialState = {
-  isSidebarOpen: true,
+  isSidebarOpen: false,
   products_loading: false,
   products_error: false,
   products:[],

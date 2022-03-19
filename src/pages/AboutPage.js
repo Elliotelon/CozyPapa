@@ -15,10 +15,17 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Minim laboris est qui anim ut eu non sint cupidatat cillum aute. Sit
-            nulla duis et officia. Et ut occaecat nostrud in reprehenderit enim
-            culpa eiusmod ex consectetur. Officia ut cupidatat mollit nulla esse
-            consectetur.
+            Eiusmod veniam elit nostrud cillum quis laboris ad est Lorem. Aute
+            cupidatat ad incididunt et nostrud irure. Elit do non ex nostrud
+            dolor laborum sit velit ad. Excepteur pariatur non dolor magna
+            eiusmod nulla. Id proident pariatur qui aliquip ad mollit sint sit
+            eiusmod reprehenderit. Eiusmod est in eiusmod culpa magna tempor in
+            sit sint elit esse. Id et incididunt aliquip consequat elit
+            exercitation. Officia culpa eu ea qui mollit est nulla elit eiusmod
+            qui excepteur. Adipisicing officia nisi id officia deserunt aliquip
+            velit exercitation officia sit pariatur. Consequat veniam incididunt
+            sit minim pariatur non dolore irure. Enim aute sunt esse est et
+            ullamco et labore cupidatat consectetur nisi.
           </p>
         </article>
       </Wrapper>

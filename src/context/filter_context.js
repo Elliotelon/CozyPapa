@@ -76,7 +76,9 @@ export const FilterProvider = ({ children }) => {
     }
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
-  const clearFilteres = () => {};
+  const clearFilters = () => {
+    dispatch({type: CLEAR_FILTERS})
+  };
 
   return (
     <FilterContext.Provider
@@ -86,7 +88,7 @@ export const FilterProvider = ({ children }) => {
         setListView,
         updateSort,
         updateFilters,
-        clearFilteres,
+        clearFilters,
       }}
     >
       {children}

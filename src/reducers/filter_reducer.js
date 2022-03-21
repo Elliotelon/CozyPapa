@@ -8,7 +8,6 @@ import {
   FILTER_PRODUCTS,
   CLEAR_FILTERS,
 } from "../actions";
-import { useProductsContext } from "../context/products_context";
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {

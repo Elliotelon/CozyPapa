@@ -10,36 +10,39 @@ import {
   About,
   Produts,
   Private,
+  AuthWrapper,
 } from "./pages";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Sidebar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/cart">
-          <Cart />
-        </Route>
-        <Route exact path="/products">
-          <Produts />
-        </Route>
-        <Route exact path="/products/:id" children={<SingleProduct />} />
-        <Private exact path="/checkout">
-          <Checkout />
-        </Private>
-        <Route path="*">
-          <Error />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <AuthWrapper>
+      <Router>
+        <Navbar />
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/cart">
+            <Cart />
+          </Route>
+          <Route exact path="/products">
+            <Produts />
+          </Route>
+          <Route exact path="/products/:id" children={<SingleProduct />} />
+          <Private exact path="/checkout">
+            <Checkout />
+          </Private>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </AuthWrapper>
   );
 }
 

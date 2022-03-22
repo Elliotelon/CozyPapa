@@ -52,7 +52,6 @@ const SingleProductPage = () => {
     stock,
     stars,
     reviews,
-    id: sku,
     company,
     images,
   } = product;
@@ -75,10 +74,6 @@ const SingleProductPage = () => {
           <p className="info">
             <span>Available : </span>
             {stock > 0 ? "In stock" : "out of stock"}
-          </p>
-          <p className="info">
-            <span>SKU : </span>
-            {sku}
           </p>
           <p className="info">
             <span>Brand : </span>

@@ -14,7 +14,7 @@ const CartButtons = () => {
   return (
     <Wrapper className="cart-btn-wrapper">
       <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
-        Cart
+        장바구니
         <span className="cart-container">
           <FaShoppingCart />
           <span className="cart-value">{total_items}</span>
@@ -32,11 +32,11 @@ const CartButtons = () => {
           }
           }
         >
-          Logout <FaUserMinus />
+          로그아웃 <FaUserMinus />
         </button>
       ) : (
         <button type="button" className="auth-btn" onClick={loginWithRedirect}>
-          Login <FaUserPlus />
+          로그인 <FaUserPlus />
         </button>
       )}
     </Wrapper>
@@ -47,11 +47,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  width: 225px;
+  width: 270px;
 
   .cart-btn {
     color: var(--clr-grey-1);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
     display: flex;
@@ -87,7 +87,7 @@ const Wrapper = styled.div`
     align-items: center;
     background: transparent;
     border-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: var(--clr-grey-1);
     letter-spacing: var(--spacing);

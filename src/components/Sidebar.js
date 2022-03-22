@@ -38,7 +38,7 @@ const Sidebar = () => {
           {myUser && (
             <li>
               <Link to="/checkout" onClick={closeSidebar}>
-                checkout
+                결제
               </Link>
             </li>
           )}

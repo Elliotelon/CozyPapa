@@ -93,19 +93,19 @@ const CheckoutForm = () => {
     <div>
       {succeeded ? (
         <article>
-          <h4>Thank you</h4>
-          <h4>Your payment was successful!</h4>
-          <h4>Redirecting to home page shortly</h4>
+          <h4>감사합니다.</h4>
+          <h4>결제가 성공적으로 처리되었습니다.</h4>
+          <h4>잠시후 홈화면으로 이동합니다.</h4>
         </article>
       ) : (
         <article>
-          <h4>hello, {myUser && myUser.name}</h4>
-          <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
-          <p>Test Card Number : 4242 4242 4242 4242</p>
-          <p>Test MM : 03</p>
-          <p>Test YY : 33</p>
-          <p>Test CVC : 333</p>
-          <p>Test ZIP CODE : 33333</p>
+          <h4>{myUser && myUser.name} 고객님 환영합니다.</h4>
+          <p>총지불금액 : {formatPrice(shipping_fee + total_amount)}</p>
+          <p>테스트 카드번호 : 4242 4242 4242 4242</p>
+          <p>테스트 MM : 03</p>
+          <p>테스트 YY : 33</p>
+          <p>테스트 CVC : 333</p>
+          <p>테스트 우편번호 : 33333</p>
         </article>
       )}
       <form id="payment-form" onSubmit={handleSubmit}>
@@ -127,11 +127,11 @@ const CheckoutForm = () => {
         )}
         {/* Show a success message upon completion */}
         <p className={succeeded ? "result-message" : "result-message hidden"}>
-          Payment succeed, see the result in your
+          결제 성공, 결과를 보시려면 &nbsp;
           <a href={`https://dashboard.stripe.com/test/payments`}>
             Stripe dashboard.
           </a>
-          Refresh the page to pay again
+          &nbsp; 에서 새로고침을 누르시면 확인할 수 있습니다.
         </p>
       </form>
     </div>

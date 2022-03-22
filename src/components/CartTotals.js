@@ -14,24 +14,24 @@ const CartTotals = () => {
       <div>
         <article>
           <h5>
-            subtotal : <span>{formatPrice(total_amount)}</span>
+            가격 : <span>{formatPrice(total_amount)}</span>
           </h5>
           <p>
-            shipping fee : <span>{formatPrice(shipping_fee)}</span>
+            배송비 : <span>{formatPrice(shipping_fee)}</span>
           </p>
           <hr />
           <h4>
-            order total :{" "}
+            총 지불금액 :{" "}
             <span>{formatPrice(total_amount + shipping_fee)}</span>
           </h4>
         </article>
         {myUser ? (
           <Link to="/checkout" className="btn">
-            proceed to checkout
+            결제
           </Link>
         ) : (
           <button type="button" className="btn" onClick={loginWithRedirect}>
-            login
+            로그인
           </button>
         )}
       </div>

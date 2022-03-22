@@ -34,7 +34,7 @@ const AddToCart = ({ product }) => {
   return (
     <Wrapper>
       <div className="colors">
-        <span> colors: </span>
+        <span> 색상: </span>
         <div>
           {colors.map((color, index) => {
             return (
@@ -65,7 +65,7 @@ const AddToCart = ({ product }) => {
             addToCart(id, mainColor, amount, product);
           }}
         >
-          add to cart
+          장바구니에 추가
         </Link>
       </div>
     </Wrapper>

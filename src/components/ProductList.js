@@ -9,7 +9,7 @@ const ProductList = () => {
   if (products.length < 1) {
     return (
       <h5 style={{ textTransform: "none" }}>
-        Sorry, no products matched your search...
+        상품을 찾을 수 없습니다...
       </h5>
     );
   }
@@ -17,7 +17,7 @@ const ProductList = () => {
     return <ListView products={products} />
   }
 
-  return <GridView products={products}>product list</GridView>;
+  return <GridView products={products}>상품 목록</GridView>;
 };
 
 export default ProductList;

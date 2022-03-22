@@ -8,12 +8,11 @@ const Services = () => {
       <div className="section-center">
         <article className="header">
           <h3>
-            custom furniture <br />
-            built only for you
+            당신을 위한 <br />
+            맞춤 가구 제작
           </h3>
           <p>
-            Veniam dolor esse fugiat et proident officia mollit aute duis
-            proident culpa. Officia reprehenderit voluptate velit pariatur
+            주문제작을 하고있으며 소요 기간은 약 2주~4주 예상됩니다.
           </p>
         </article>
         <div className="services-center">

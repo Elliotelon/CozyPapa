@@ -5,21 +5,20 @@ const Contact = () => {
   return (
     <Wrapper>
       <div className="section-center">
-        <h3>Join our newsletter and get 20% off</h3>
+        <h3>잡지 구독시 20% 할인 쿠폰 발송</h3>
         <div className="content">
           <p>
-            Commodo cupidatat proident ea ad tempor ut voluptate minim anim
-            nostrud duis qui ea qui. Do voluptate enim ut deserunt est elit
-            reprehenderit tempor. Occaecat laborum non qui sint.
+            잡지를 구독하시면 할인 쿠폰을 보내드려요. <br />
+            (이벤트 기간 : 2022.03.22 ~ 2022.03.30)
           </p>
           <form className="contact">
             <input
               type="email"
               className="form-input"
-              placeholder="enter email"
+              placeholder="이메일"
             />
             <button type="submit" className="submit-btn">
-              subscribe
+              구독
             </button>
           </form>
         </div>

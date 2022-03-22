@@ -3,17 +3,17 @@ import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
 export const links = [
   {
     id: 1,
-    text: 'home',
+    text: '홈',
     url: '/',
   },
   {
     id: 2,
-    text: 'about',
+    text: '소개',
     url: '/about',
   },
   {
     id: 3,
-    text: 'products',
+    text: '상품',
     url: '/products',
   },
 ]
@@ -22,23 +22,23 @@ export const services = [
   {
     id: 1,
     icon: <GiCompass />,
-    title: 'mission',
+    title: '목적',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      '개인의 취향에 맞는 가구 제작',
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
-    title: 'vision',
+    title: '비전',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      '맞춤 제작 전문 가구점으로 확장할 예정',
   },
   {
     id: 3,
     icon: <GiStabbedNote />,
-    title: 'history',
+    title: '특징',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      '전문 가구 장인들을 많이 섭외중',
   },
 ]
 

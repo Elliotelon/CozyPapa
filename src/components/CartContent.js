@@ -18,14 +18,14 @@ const CartContent = () => {
       <hr />
       <div className="link-container">
         <Link to="/products" className="link-btn">
-          continue shopping
+          쇼핑 계속하기
         </Link>
         <button
           type="button"
           className="link-btn clear-btn"
           onClick={clearCart}
         >
-          clear shopping cart
+          장바구니 초기화
         </button>
       </div>
       <CartTotals />

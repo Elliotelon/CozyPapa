@@ -60,7 +60,7 @@ const SingleProductPage = () => {
     <PageHero title={name} product />
     <div className="section section-center page">
       <Link to="/products" className="btn">
-        back to products
+        상품 목록
       </Link>
       <div className="product-center">
         <ProductImages images={images} />
@@ -72,11 +72,11 @@ const SingleProductPage = () => {
             {description}
           </p>
           <p className="info">
-            <span>Available : </span>
+            <span>재고상황 : </span>
             {stock > 0 ? "In stock" : "out of stock"}
           </p>
           <p className="info">
-            <span>Brand : </span>
+            <span>브랜드 : </span>
             {company}
           </p>
           <hr />

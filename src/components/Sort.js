@@ -30,10 +30,10 @@ const Sort = () => {
           <BsList />
         </button>
       </div>
-      <p>{products.length} products found</p>
+      <p>{products.length} 개의 상품을 찾았습니다.</p>
       <hr />
       <form>
-        <label htmlFor="sort">sort by</label>
+        <label htmlFor="sort">정렬 기준</label>
         <select
           name="sort"
           id="sort"
@@ -41,10 +41,10 @@ const Sort = () => {
           value={sort}
           onChange={updateSort}
         >
-          <option value="price-lowest">price (lowest)</option>
-          <option value="price-highest">price (highest)</option>
-          <option value="name-a">name (a-z)</option>
-          <option value="name-z">name (z-a)</option>
+          <option value="price-lowest">낮은 가격순</option>
+          <option value="price-highest">높은 가격순</option>
+          <option value="name-a">상품명(a-z)</option>
+          <option value="name-z">상품명(z-a)</option>
         </select>
       </form>
     </Wrapper>

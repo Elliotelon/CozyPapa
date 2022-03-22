@@ -34,7 +34,7 @@ const Filters = () => {
             <input
               type="text"
               name="text"
-              placeholder="search"
+              placeholder="검색어를 입력해주세요."
               className="search-input"
               value={text}
               onChange={updateFilters}
@@ -43,7 +43,7 @@ const Filters = () => {
           {/* end search input */}
           {/* categories */}
           <div className="form-control">
-            <h5>category</h5>
+            <h5>종류</h5>
             <div>
               {categories.map((c, index) => {
                 return (
@@ -65,7 +65,7 @@ const Filters = () => {
           {/* end of categories */}
           {/* companies */}
           <div className="form-control">
-            <h5>company</h5>
+            <h5>브랜드</h5>
             <select
               name="company"
               value={company}
@@ -84,7 +84,7 @@ const Filters = () => {
           {/* end of companies */}
           {/* colors */}
           <div className="form-control">
-            <h5>colors</h5>
+            <h5>색상</h5>
             <div className="colors">
               {colors.map((c, index) => {
                 if (c === "all") {
@@ -122,7 +122,7 @@ const Filters = () => {
           {/* end of colors */}
           {/* price */}
           <div className="form-control">
-            <h5>price</h5>
+            <h5>가격</h5>
             <p className="price">{formatPrice(price)}</p>
             <input
               type="range"
@@ -136,7 +136,7 @@ const Filters = () => {
           {/* end of price */}
           {/* shipping */}
           <div className="form-control shipping">
-            <label htmlFor="shipping">free shipping</label>
+            <label htmlFor="shipping">무료 배송</label>
             <input
               type="checkbox"
               name="shipping"
@@ -148,7 +148,7 @@ const Filters = () => {
           {/* end of shipping */}
         </form>
         <button type="button" className="clear-btn" onClick={clearFilters}>
-          clear filters
+          필터 초기화
         </button>
       </div>
     </Wrapper>

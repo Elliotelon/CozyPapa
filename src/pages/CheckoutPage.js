@@ -9,13 +9,13 @@ const CheckoutPage = () => {
   const { cart } = useCartContext();
   return (
     <main>
-      <PageHero title="checkout" />
+      <PageHero title="결제" />
       <Wrapper className="page">
         {cart.length < 1 ? (
           <div className="empty">
-            <h2>your cart is empty</h2>
+            <h2>장바구니가 비어있습니다.</h2>
             <Link to="/products" className="btn">
-              fill it
+              상품 목록
             </Link>
           </div>
         ) : (

@@ -9,18 +9,15 @@ const Hero = () => {
     <Wrapper className="section-center">
       <article className="content">
         <h1>
-          design your <br />
-          comfort zone
+         편안한 공간을 <br />
+         디자인 하세요.
         </h1>
         <p>
-          Commodo duis culpa deserunt nostrud consectetur voluptate. Nostrud qui
-          occaecat sint quis. Occaecat eu adipisicing minim dolore. Aute laboris
-          velit sint cillum in exercitation voluptate occaecat ipsum proident.
-          Tempor veniam minim exercitation enim cupidatat deserunt quis. Laboris
-          occaecat non ea incididunt do magna amet.
+          CozyPapa의 상품들을 사용하면 편안함과 아름다움을 느낄 수 있습니다.
+          판매하는 상품들은 가구 장인들이 직접 만든 제품입니다.
         </p>
         <Link to="/products" className="btn hero-btn">
-          shop now
+          쇼핑하기
         </Link>
       </article>
       <article className="img-container">

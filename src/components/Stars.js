@@ -19,7 +19,7 @@ const Stars = ({ stars, reviews }) => {
   return (
     <Wrapper>
       <div className="stars">{tempStars}</div>
-      <p className="reviews">({reviews} customer reviews)</p>
+      <p className="reviews">({reviews} 개의 리뷰가 있습니다.)</p>
     </Wrapper>
   );
 };
